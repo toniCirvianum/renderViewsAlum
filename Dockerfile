@@ -1,6 +1,10 @@
 FROM php:8.3-apache-bullseye
-RUN apt-get update && apt-get install -y git zip unzip \
+RUN apt update && apt install -y \
+    git \
+    zip \
+    unzip \
     && rm -rf /var/lib/apt/lists/*
+    
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
 RUN { \
