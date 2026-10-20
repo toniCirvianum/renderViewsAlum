@@ -18,7 +18,7 @@
 
                 <div class="navbar-nav">
                     <a class="nav-link" href="<?= '/../index.php' ?>">Products</a>
-                    <a class="nav-link" href="#">Categories</a>
+                    <a class="nav-link" href="<?= '/../index.php?page=categories' ?>">Categories</a>
                 </div>
             </div>
         </nav>
